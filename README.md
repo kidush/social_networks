@@ -2,9 +2,28 @@
 
 ### Running the application:
 
-To make de process of testing easier, I set up a docker-compose file, so all that we need
-to do to run is:
+**Ruby Version**: Despite I'm not using any new feature from Ruby 3.1, I would recommend use it =).
+
+Install dependencies
 
 ```bash
-docker-compose up
+bundle install
+```
+
+Running redis with docker:
+
+```bash
+docker run -d --name redis -p 6379:6379 redis
+```
+
+Spin up sidekiq
+
+```bash
+bundle exec sidekiq
+```
+
+Spin up rails server
+
+```bash
+bundle exec rails s
 ```
