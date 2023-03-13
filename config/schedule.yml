@@ -1,0 +1,4 @@
+update_posts_job:
+  cron: "*/15 * * * *"
+  class: "SocialNetwork::UpdatePostsJob"
+  queue: default
