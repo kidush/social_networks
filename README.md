@@ -2,22 +2,9 @@
 
 ### Running the application:
 
-Things you may want to cover:
+To make de process of testing easier, I set up a docker-compose file, so all that we need
+to do to run is:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+docker-compose up
+```
